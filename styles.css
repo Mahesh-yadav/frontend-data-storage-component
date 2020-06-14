@@ -1,0 +1,147 @@
+:root{
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    background-image: url("./images/bg-mobile.svg");
+    background-repeat: no-repeat;
+}
+
+body {
+    padding: 1rem;
+    padding-top: 5rem;
+}
+
+.top-container{
+    background-color: hsl(228, 56%, 26%);
+    border-radius: .5rem;
+    border-top-right-radius: 7rem;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-container{
+    margin-bottom: 2rem;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: start;
+}
+
+.icon{
+    padding: .75rem .5rem;
+    background-color: hsl(229, 57%, 11%);
+    width: 50px;
+    border-radius: .7rem;
+    display: flex;
+}
+
+.icon + .icon {
+    margin-left: .5rem;
+}
+
+.icon img{
+    margin: auto;
+}
+
+.bottom-container{
+    background-color: hsl(228, 56%, 26%);
+    border-radius: .5rem;
+    padding: 2rem;
+    position: relative;
+}
+
+.data-usage-desc{
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 1.20rem;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.data-qty{
+    font-weight: 700;
+}
+
+.data-usage-bar{
+    width: 100%;
+}
+
+.data-usage-bar progress{
+    width: 100%;
+    height: 1.5rem;
+    background: none;
+}
+
+progress::-webkit-progress-bar {
+    background: hsl(229, 63%, 21%);
+    border-radius: 1rem;
+    padding: 3px;
+}
+
+progress::-webkit-progress-value{
+    border-radius: 1rem;
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+
+.data-limits {
+    display: flex;
+    justify-content: space-between;
+    margin: .75rem 0;
+}
+
+.data-limits span{
+    color: white;
+    font-weight: 700;
+}
+
+.data-left{
+    background-color: white;
+    position: absolute;
+    left: 25%;
+    border-radius: .5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.data-num{
+    font-size: 3rem;
+    font-weight: 700;
+    vertical-align: middle;
+}
+
+.data-text{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: hsl(240, 1%, 50%);
+    vertical-align: middle;
+    margin-left: .5rem;
+}
+
+.attribution {
+    position: fixed;
+    bottom: 5rem;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.attribution a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.attribution a:hover{
+    text-decoration: underline;
+}
