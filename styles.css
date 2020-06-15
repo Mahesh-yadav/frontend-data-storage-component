@@ -77,21 +77,31 @@ body {
     width: 100%;
 }
 
-.data-usage-bar progress{
+.data-usage-bar{
     width: 100%;
     height: 1.5rem;
-    background: none;
-}
-
-progress::-webkit-progress-bar {
     background: hsl(229, 63%, 21%);
     border-radius: 1rem;
     padding: 3px;
 }
 
-progress::-webkit-progress-value{
+.data-usage-value{
     border-radius: 1rem;
+    width: 81.5%;
+    height: calc(1.5rem - 6px);
     background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    position: relative;
+}
+
+.data-usage-value::after{
+    content: '';
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    right: 2px;
+    top: 1px;
 }
 
 .data-limits {
